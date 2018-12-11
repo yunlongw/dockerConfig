@@ -45,4 +45,6 @@ services:
       - /server/nginx:/etc/nginx
       - /server/logs/nginx.logs:/var/log/nginx
       - /etc/localtime:/etc/localtime:ro
+    command: [nginx-debug, '-g', 'daemon off;']
+
     image: nginx:latest

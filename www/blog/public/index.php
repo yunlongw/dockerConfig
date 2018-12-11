@@ -9,7 +9,7 @@ try {
 
     try {
         $redis = new Redis();
-        $res = $redis->connect('myredis', 6379);//地址直接使用link指定的标签myredis
+        $res = $redis->connect('127.0.0.1', 6379);//地址直接使用link指定的标签myredis
         if (!$res) {
             throw new Exception('');
         }
